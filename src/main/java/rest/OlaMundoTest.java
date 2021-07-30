@@ -1,4 +1,4 @@
-package rest.assured;
+package rest;
 
 import org.junit.Assert;
 import org.junit.Test;
