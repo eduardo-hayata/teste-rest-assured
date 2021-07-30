@@ -17,7 +17,7 @@ import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 
-public class OlaMundoTeste {
+public class OlaMundoTest {
 	
 	@Test
 	public void testeOlaMundo() {
@@ -53,7 +53,7 @@ public class OlaMundoTeste {
 	
 	@Test
 	public void deveConhecerMatchersHamcrest() {
-		Assert.assertThat("Maria", Matchers.is("Maria"));  // (actual, expected)
+		Assert.assertThat("Maria", Matchers.is("Maria"));  // assertThat(actual, expected)
 		Assert.assertThat(123, Matchers.is(123));
 		Assert.assertThat(123, Matchers.isA(Integer.class));
 		Assert.assertThat(123d, Matchers.isA(Double.class));
